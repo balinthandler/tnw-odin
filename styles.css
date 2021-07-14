@@ -14,17 +14,30 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #F7F8F8;
-  height: 50px;
+  height: 55px;
   
 }
-
-.logo-box {
-  width: 65px;
-  margin: 0 1.5em;
-
+.burger-logo-wrapper {
+  display: flex;
+  padding: 0 1rem;
+  
+}
+.burger-menu {
+  display:none;
+  grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 3px;
+  height: 18px;
+  width: 18px;
+  margin-right: 1rem;
+  
+}
+.burger-menu div {
+  background: #A7AAB2;
 }
 
+
 .logo {
+  width: 65px;
   transition-duration: .7s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
@@ -69,5 +82,23 @@ nav {
   width: 20px;
   margin: 0 1.5em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .mail-wrapper{
+    display: none;
+  }
+  .burger-menu {
+    display: grid;
+  }
+  .logo {
+    fill: #A7AAB2
+  }
+  .logo:hover {
+    fill: #000;
+  }
+  nav {
+    display: none;
+  }
 }
 /* MAIN */
