@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1em;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F7F8F8;
+  height: 50px;
+  
+}
+
+.logo-box {
+  width: 65px;
+  margin: 0 1.5em;
+
+}
+
+.logo {
+  transition-duration: .7s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.logo:hover {
+  fill: #CC0099;
+}
+nav {
+  height: 100%;
+}
+.main-menu {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+}
+.main-menu li{
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  gap: .5em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  height: 100%;
+  padding: 0 1rem;
+  cursor: pointer;
+  color: #353535;
+}
+
+.main-menu li:hover {
+  color: #353535;
+  background: #fff;
+}
+
+.main-menu .fas {
+  color: #DEDFE2;
+}
+
+.mail-wrapper {
+  fill: #CDD0D4;
+  width: 20px;
+  margin: 0 1.5em;
+  cursor: pointer;
+}
+/* MAIN */
